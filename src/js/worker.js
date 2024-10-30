@@ -17,7 +17,7 @@ self.addEventListener("message", (e) => {
     const validHash = validationHash(hash, algorithm);
 
     if (!validHash) {
-      hash = "Ошибка!"
+      hash = "Ошибка!";
     }
 
     self.postMessage(hash);
@@ -41,17 +41,21 @@ function getHashByAlgorithm(algorithm, wordArray) {
 
 function validationHash(hash, algorithm) {
   switch (algorithm) {
-    case "MD5":
+    case "MD5": {
       const md5 = /^[a-f0-9]{32}$/gi;
-      return md5.test(hash)  
-    case "SHA1":
+      return md5.test(hash);
+    }
+    case "SHA1": {
       const sha1 = /\b([a-f0-9]{40})\b/;
-      return sha1.test(hash)  
-    case "SHA256":
+      return sha1.test(hash);
+    }
+    case "SHA256": {
       const sha256 = /^[a-fA-F0-9]{64}$/gm;
-      return sha256.test(hash)  
-    case "SHA512":
+      return sha256.test(hash);
+    }
+    case "SHA512": {
       const sha512 = /^[a-fA-F0-9]{128}$/gm;
-      return sha512.test(hash)
+      return sha512.test(hash);
+    }
   }
 }

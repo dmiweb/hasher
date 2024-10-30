@@ -1,4 +1,5 @@
-# Hasher ### (on Web Worker)
+# Hasher 
+### (on Web Worker)
 
 **GitHub Page** - 
 
