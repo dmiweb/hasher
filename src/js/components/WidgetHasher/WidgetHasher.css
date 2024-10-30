@@ -1,0 +1,53 @@
+.widget-hasher {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.widget-hasher__title {
+  margin: 0;
+  font-weight: 400;
+}
+
+.select-algorithm__title {
+  position: relative;
+  font-size: 18px;
+}
+
+.algorithm-menu {
+  padding: 0 30px;
+  margin-left: -25px;
+  border: none;
+  font-size: 1em;
+  text-decoration: underline;
+  color: #696969;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.calculated-hash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.calculated-hash__title {
+  font-size: 1.4em;
+}
+
+.calculated-hash__hash {
+  font-size: 1.1em;
+  text-align: center;
+  word-break: break-all;
+}
